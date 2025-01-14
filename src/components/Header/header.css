@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.google.com/specimen/Roboto+Condensed');
 
-
-header{
+header {
     background-color: black;
     height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 20px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    padding: 0 20px; 
 }
 
-.logo{
+.logo {
+    display: flex;
     font-family: 'Dancing Script', cursive;
     text-decoration: none;
     color: white;
@@ -19,11 +25,38 @@ header{
     transition: 0.3s;
 }
 
-.logo:hover{
+.logo:hover {
     font-size: 33px;
 }
 
-.contato, .sobre {
+nav {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
+    transition: 0.3s;
+} 
+
+.contato:hover{
+    font-size: 18px;
+} 
+
+
+.sobre, .portifolio {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
@@ -33,6 +66,6 @@ header{
     border-radius: 10px;
 }
 
-.contato:hover, .sobre:hover {
+.sobre:hover, .portifolio:hover {
     font-size: 18px;
 }
